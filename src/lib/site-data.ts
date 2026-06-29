@@ -17,8 +17,8 @@ export const contact = {
     email: 'eli.maciel@mielmdc.com',
     facebook: '/miel.mdelcampo',
     facebookUrl: 'https://www.facebook.com/miel.mdelcampo',
-    instagram: '@martindelcampo.miel',
-    instagramUrl: '#'
+    instagram: '@mdc.miel',
+    instagramUrl: 'https://www.instagram.com/mdc.miel/'
 }
 
 export const navLinks = [
