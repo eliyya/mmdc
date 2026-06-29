@@ -12,11 +12,11 @@ export const brand = {
 
 export const contact = {
     whatsapp:
-        'https://wa.me/521234567890?text=Hola!%20Me%20interesa%20la%20miel%20Mart%C3%ADn%20del%20Campo',
-    phone: '+52 123 456 7890',
-    email: 'hola@martindelcampo.mx',
-    facebook: '/MielMartinDelCampo',
-    facebookUrl: '#',
+        'https://wa.me/528145129468?text=Hola!%20Me%20interesa%20la%20miel%20Mart%C3%ADn%20del%20Campo',
+    phone: '+52 814 512 9468',
+    email: 'eli.maciel@mielmdc.com',
+    facebook: '/miel.mdelcampo',
+    facebookUrl: 'https://www.facebook.com/miel.mdelcampo',
     instagram: '@martindelcampo.miel',
     instagramUrl: '#'
 }
@@ -75,11 +75,11 @@ export const differences = [
 
 export const products = [
     {
-        id: '250ml',
-        size: '250 ml',
+        id: '235ml',
+        size: '235 ml',
         badge: 'Para probar',
-        image: 'Frasco 250 ml',
-        text: 'presentaci%C3%B3n%20de%20250%20ml',
+        image: 'Frasco 235 ml',
+        text: 'presentaci%C3%B3n%20de%20235%20ml',
         description:
             'El tamaño ideal para conocernos o llevar miel a donde vayas.',
         featured: false,
