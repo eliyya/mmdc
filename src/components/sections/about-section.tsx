@@ -6,10 +6,11 @@ export function AboutSection() {
         <section id="historia" className="bg-honey-cream">
             <div className="container-page flex flex-wrap items-center gap-x-16 gap-y-[54px] py-[clamp(80px,12vh,140px)]">
                 <div className="reveal-soft grid min-w-[290px] flex-1 basis-[360px] grid-cols-2 gap-4">
-                    {storyPhotos.map((photo, index) => (
+                    {storyPhotos.map(([photo, path], index) => (
                         <PhotoPlaceholder
                             key={photo}
                             label={photo}
+                            path={path}
                             colors={
                                 index === 0
                                     ? ['#EAD8B6', '#E3CDA4']

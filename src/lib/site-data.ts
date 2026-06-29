@@ -35,7 +35,7 @@ export const heroStats = [
     { number: 'Local', label: 'Del campo mexicano' }
 ]
 
-export const storyPhotos = ['Colmenas', 'Trabajo apícola', 'Extracción']
+export const storyPhotos = [['Colmenas', '/assets/colmena.png'], ['Trabajo apícola', '/assets/trabajo.png'], ['Extracción', '/assets/extraccion.png']]
 
 export const differences = [
     {
