@@ -7,3 +7,5 @@ dist
 !.env.example
 coverage
 *.log
+next-env.d.ts
+.vercel
