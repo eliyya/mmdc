@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Libre_Baskerville } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { brand } from '@/lib/site-data'
 
@@ -47,6 +48,7 @@ export default function RootLayout({
         <html lang="es" className={`${inter.variable} ${libre.variable}`}>
             <body>{children}</body>
             <Analytics />
+            <SpeedInsights />
         </html>
     )
 }
