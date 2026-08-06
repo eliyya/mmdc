@@ -78,6 +78,7 @@ export const products = [
         id: '235ml',
         size: '235 ml',
         badge: 'Para probar',
+        path: '/assets/235ml.png',
         image: 'Frasco 235 ml',
         text: 'presentaci%C3%B3n%20de%20235%20ml',
         description:
@@ -89,6 +90,7 @@ export const products = [
         id: '500ml',
         size: '500 ml',
         badge: 'Más popular',
+        path: '/assets/500ml.png',
         image: 'Frasco 500 ml',
         text: 'presentaci%C3%B3n%20de%20500%20ml',
         description:
@@ -100,6 +102,7 @@ export const products = [
         id: '1l',
         size: '1 litro',
         badge: 'Familiar',
+        path: '/assets/1l.png',
         image: 'Frasco de 1 litro',
         text: 'presentaci%C3%B3n%20de%201%20litro',
         description:

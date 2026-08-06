@@ -44,6 +44,7 @@ export function ProductsSection() {
                             <PhotoPlaceholder
                                 label={product.image}
                                 colors={productColors[product.id]}
+                                path={product.path}
                                 className="aspect-[4/3] shadow-none"
                             />
                             <div className="p-[26px]">
