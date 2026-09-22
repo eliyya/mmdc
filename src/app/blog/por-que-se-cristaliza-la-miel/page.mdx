@@ -1,0 +1,116 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { crystallizationArticle as article } from '@/lib/articles'
+import { socialMetadata } from '@/lib/metadata'
+
+export const metadata = socialMetadata({
+    title: article.title,
+    description: article.excerpt,
+    path: `/blog/${article.slug}`,
+    image: '/assets/miel-cristalizada-og.jpg',
+    imageAlt: article.imageAlt,
+    publishedTime: article.date
+})
+
+<header>
+    <Link
+        href="/blog"
+        className="text-honey-muted mb-8 inline-block underline underline-offset-4"
+    >
+        ← Todos los artículos
+    </Link>
+    <p className="section-label">{article.category}</p>
+    <h1 className="text-honey-brown text-4xl leading-tight font-bold sm:text-5xl">
+        {article.title}
+    </h1>
+    <p className="text-honey-muted mt-5 text-sm">
+        <time dateTime={article.date}>{article.dateLabel}</time> ·{' '}
+        {article.readingTime}
+    </p>
+    <p className="text-honey-muted mt-6 text-xl leading-relaxed">
+        Un frasco que se vuelve espeso o granuloso puede despertar dudas.
+        Entender qué ocurre dentro ayuda a distinguir un cambio de textura de un
+        problema de conservación.
+    </p>
+    <Image
+        src={article.image}
+        alt={article.imageAlt}
+        width={1200}
+        height={750}
+        priority
+        className="mt-8 aspect-16/10 w-full rounded-3xl object-cover"
+        sizes="(max-width: 768px) 100vw, 768px"
+    />
+</header>
+
+Abres la alacena y encuentras algo distinto: la miel que antes caía en un hilo ahora está más espesa, tiene granitos o parece haberse endurecido. Tal vez se ve más clara y cuesta sacarla del frasco. La primera reacción suele ser la misma: "Se hizo azúcar", "me vendieron miel falsa" o "ya se echó a perder".
+
+**La cristalización, por sí sola, no significa ninguna de esas cosas.** Es un proceso natural que puede ocurrir en la miel. Tampoco funciona como certificado de pureza por si solo: aunque puede ser una buena señal, para saber si un producto fue adulterado hace falta más información que su apariencia.
+
+## ¿Qué pasa cuando la miel se cristaliza?
+
+La miel contiene mucha azúcar disuelta en una cantidad relativamente pequeña de agua. Entre sus azúcares predominan la **glucosa y la fructosa**, presentes de forma natural. Aunque no veas granos en una miel líquida, esos azúcares ya están ahí.
+
+Con el tiempo, parte de la glucosa puede dejar de estar disuelta y organizarse en cristales. Al crecer y acumularse, estos cambian la consistencia del contenido: puede pasar de líquido a espeso, cremoso, granuloso o firme.
+
+Es un cambio físico. La miel no empieza a producir azúcar nueva ni se convierte en azúcar de mesa. Lo que antes estaba disuelto ahora se hace visible y se siente al probarlo.
+
+## Entonces, ¿por qué decimos que "se hizo azúcar"?
+
+La expresión describe bastante bien la sensación de los granitos, pero puede llevar a una conclusión equivocada: pensar que alguien añadió azúcar al frasco.
+
+**Tener azúcares naturales y tener azúcares añadidos son cosas diferentes.** Una miel auténtica ya contiene glucosa y fructosa. Adulterarla con jarabes u otros endulzantes es una intervención distinta; no se puede deducir simplemente porque aparecieron cristales.
+
+El color también puede cambiar. Al cristalizar, la miel suele verse más opaca y clara. Ese aspecto blanquecino, cuando corresponde a cristales, no demuestra por sí mismo que se haya estropeado.
+
+## ¿Por qué unas mieles se endurecen y otras siguen líquidas?
+
+No todas tienen la misma composición ni han pasado por las mismas condiciones. Por eso, comparar dos frascos como si debieran cambiar al mismo tiempo suele confundir más de lo que aclara.
+
+- **El origen floral.** Los néctares influyen en la proporción de azúcares. En general, una mayor proporción de glucosa favorece la cristalización; una mayor proporción de fructosa respecto a la glucosa puede retrasarla.
+- **La temperatura.** Influye en la velocidad del proceso. Alrededor de 14 °C suele favorecerse la formación de cristales. Sin embargo, no es correcto pensar que cuanto más frío, más rápido: a temperaturas muy bajas también disminuye el movimiento de las moléculas.
+- **Las partículas microscópicas.** El polen y los cristales que ya existen pueden servir como puntos de inicio para que se formen otros.
+- **El manejo y el almacenamiento.** El calentamiento y la filtración pueden retrasar la cristalización. También influye el contenido de agua, en conjunto con los demás factores.
+
+No existe un plazo universal que una miel deba cumplir para "demostrar" que es auténtica. Que un frasco siga líquido durante mucho tiempo no permite declararlo falso.
+
+## ¿La miel cristalizada se puede comer?
+
+**Sí, si está bien conservada y no presenta señales de deterioro.** No hace falta volverla líquida para disfrutarla: puedes untarla sobre pan o incorporarla a una bebida tibia.
+
+Los cristales pueden ser tan pequeños que la textura resulte suave, o lo bastante grandes como para sentirse arenosos. De hecho, la miel mantequilla se elabora controlando la cristalización para obtener una consistencia fina y fácil de untar.
+
+Pero conviene separar dos procesos: cristalizar y fermentar. **La miel no es inmune a una mala conservación.** La humedad puede favorecer el crecimiento de levaduras. Además, cuando una parte cristaliza y otra permanece líquida, la humedad puede concentrarse en esa porción líquida y facilitar la fermentación si se dan las condiciones.
+
+Una capa líquida sobre otra sólida puede acompañar a la cristalización parcial; por sí sola no demuestra adulteración. En cambio, un olor claramente alcohólico o agrio, especialmente acompañado de espuma o burbujeo persistente, merece atención. Si hay señales de fermentación o moho, no la consumas: deséchala. Calentarla para disolver los cristales no corrige ese deterioro.
+
+## Cómo devolverle una textura líquida
+
+Si prefieres que vuelva a fluir, puedes usar un baño de agua tibia. La idea es darle calor suave y tiempo.
+
+1. **Usa un recipiente de vidrio apto para calentarse**, limpio y seco. Si la miel viene en plástico, pasa la porción que necesitas a un recipiente adecuado.
+2. **Colócalo en agua tibia, fuera del fuego.** Como referencia suave, alrededor de 35–40 °C. Mantén el agua por debajo de la boca del frasco para que no entre.
+3. **Remueve con una cuchara limpia y seca.** Renueva el agua tibia cuando se enfríe y repite si hace falta. Un frasco muy cristalizado puede requerir paciencia.
+4. **Detente cuando alcance la consistencia que buscas.** Seca el exterior y vuelve a taparlo para guardarlo.
+
+Evita el fuego directo y el agua hirviendo. Para esta tarea, el baño tibio permite controlar mejor el calentamiento que el microondas. No necesitas calentar todo el frasco cada vez: puedes ablandar únicamente la porción que vas a usar.
+
+El calor excesivo o prolongado puede afectar el aroma y otros indicadores de calidad. Tampoco hay una frontera mágica en la que, al superar un grado concreto, la miel pierda instantáneamente todas sus propiedades: importan la temperatura y el tiempo.
+
+Si después vuelve a cristalizar, puede ser simplemente la repetición del mismo proceso natural.
+
+## ¿Cómo distinguir una miel auténtica de una adulterada?
+
+La duda es válida, pero **no hay una prueba visual casera que resuelva la autenticidad**. Ni la cristalización, ni el color, ni lo espesa que parece ofrecen una respuesta definitiva.
+
+Las pruebas del vaso de agua, del cerillo o de la gota sobre el dedo tampoco son fiables. La miel auténtica se disuelve en agua; su humedad y viscosidad varían. Observar cómo se comporta en esas pruebas no equivale a detectar jarabes añadidos.
+
+Cuando se necesita comprobar una posible adulteración, se recurre a análisis especializados y a la información de la cadena de suministro. Incluso en laboratorio, ningún método aislado detecta todas las formas posibles de fraude.
+
+## Cómo guardarla en casa
+
+Mantén el frasco bien cerrado, en un lugar seco, a temperatura ambiente y lejos del sol o de la estufa. Usa utensilios limpios y secos, y no añadas agua al contenido para hacerlo más fluido: cambia sus condiciones de conservación.
+
+No hace falta refrigerarla para su uso cotidiano. Y tampoco hace falta mantenerla caliente para impedir que cambie de textura.
+
+La próxima vez que aparezcan granitos, observa el frasco con otra idea en mente: **la miel puede cambiar de consistencia y seguir siendo miel**. Comprender ese cambio evita desecharla sin motivo y ayuda a hacer mejores preguntas sobre su origen, su manejo y su conservación.

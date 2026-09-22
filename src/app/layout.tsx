@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter, Libre_Baskerville } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { brand } from '@/lib/site-data'
+import { siteUrl, socialMetadata } from '@/lib/metadata'
 
 import './globals.css'
 
@@ -21,6 +22,12 @@ const libre = Libre_Baskerville({
 })
 
 export const metadata: Metadata = {
+    metadataBase: siteUrl,
+    ...socialMetadata({
+        title: `${brand.displayName} - ${brand.tagline}`,
+        description: brand.description,
+        path: '/'
+    }),
     title: `${brand.displayName} - ${brand.tagline}`,
     description: brand.description,
     keywords: [
@@ -31,12 +38,7 @@ export const metadata: Metadata = {
         'miel pura',
         'productos naturales',
         'Guanajuato'
-    ],
-    openGraph: {
-        title: `${brand.displayName} - Miel 100% natural`,
-        description: brand.description,
-        type: 'website'
-    }
+    ]
 }
 
 export default function RootLayout({

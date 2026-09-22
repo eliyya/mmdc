@@ -17,7 +17,7 @@ export default function Home() {
             <AboutSection />
             <WhyDifferentSection />
             <ProductsSection />
-            {/* <BlogSection /> */}
+            <BlogSection />
             <TestimonialsSection />
             <FaqSection />
             <ContactSection />

@@ -41,7 +41,7 @@ export function Footer() {
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
-                                href={link.href}
+                                href={`/${link.href}`}
                                 className="text-[0.98rem] text-[#D8C3A4] transition-colors hover:text-[#FCC74B]"
                             >
                                 {footerLabels[link.label]}

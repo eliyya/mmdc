@@ -9,7 +9,7 @@ export function Header() {
         <header className="sticky top-0 z-50 border-b border-[rgba(66,34,12,0.08)] bg-[rgba(251,241,228,0.82)] backdrop-blur-xl">
             <nav className="container-page flex flex-wrap items-center justify-between gap-7 py-3">
                 <Link
-                    href="#inicio"
+                    href="/#inicio"
                     className="flex shrink-0 items-center gap-3"
                     aria-label="Ir al inicio"
                 >
@@ -35,7 +35,7 @@ export function Header() {
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
-                            href={link.href}
+                            href={`/${link.href}`}
                             className="text-honey-text hover:text-honey-gold px-0.5 py-1.5 text-[0.95rem] font-medium transition-colors"
                         >
                             {link.label}

@@ -35,7 +35,11 @@ export const heroStats = [
     { number: 'Local', label: 'Del campo mexicano' }
 ]
 
-export const storyPhotos = [['Colmenas', '/assets/colmena.png'], ['Trabajo apícola', '/assets/trabajo.png'], ['Extracción', '/assets/extraccion.png']]
+export const storyPhotos = [
+    ['Colmenas', '/assets/colmena.png'],
+    ['Trabajo apícola', '/assets/trabajo.png'],
+    ['Extracción', '/assets/extraccion.png']
+]
 
 export const differences = [
     {
@@ -75,11 +79,11 @@ export const differences = [
 
 export const products = [
     {
-        id: '235ml',
+        id: '250ml',
         size: '235 ml',
         badge: 'Para probar',
         path: '/assets/235ml.png',
-        image: 'Frasco 235 ml',
+        image: 'Botella 250 ml',
         text: 'presentaci%C3%B3n%20de%20235%20ml',
         description:
             'El tamaño ideal para conocernos o llevar miel a donde vayas.',
@@ -109,44 +113,18 @@ export const products = [
             'Para quienes ya no conciben la cocina sin miel de verdad.',
         featured: false,
         gradient: 'from-[#EAD8B6] to-[#E3CDA4]'
-    }
-]
-
-export const articles = [
-    {
-        id: 'cristalizacion',
-        title: '¿Por qué la miel se cristaliza?',
-        excerpt:
-            'La cristalización es señal de pureza, no de un defecto. Te contamos por qué pasa.',
-        category: 'Conocimiento',
-        image: 'Miel cristalizada',
-        gradient: 'from-[#F1DDBE] to-[#ECD3AC]'
     },
     {
-        id: 'adulterada',
-        title: 'Cómo identificar miel adulterada',
-        excerpt:
-            'Trucos caseros y señales sencillas para reconocer una miel honesta.',
-        category: 'Guía',
-        image: 'Prueba de pureza',
-        gradient: 'from-[#E8E2C6] to-[#DED8B8]'
-    },
-    {
-        id: 'beneficios',
-        title: 'Beneficios de la miel natural',
-        excerpt: 'Un aliado en la cocina y en los remedios caseros de siempre.',
-        category: 'Bienestar',
-        image: 'Cuchara con miel',
-        gradient: 'from-[#F4D99E] to-[#EFCE88]'
-    },
-    {
-        id: 'abejas',
-        title: 'El trabajo de las abejas',
-        excerpt:
-            'Cuánto esfuerzo hay detrás de cada gota de miel que llega a tu mesa.',
-        category: 'Naturaleza',
-        image: 'Abejas en flor',
-        gradient: 'from-[#EEDDBC] to-[#E7D0A4]'
+        id: 'mielmantequilla',
+        size: '235 ml',
+        badge: 'Para untar',
+        path: '/assets/235ml.png',
+        image: 'Frasco miel mantequilla',
+        text: 'presentaci%C3%B3n%20de%20miel%20mantequilla',
+        description:
+            'Para acompañar tus desayunos de una forma muy práctica',
+        featured: false,
+        gradient: 'from-[#F4E2C5] to-[#EED7AE]'
     }
 ]
 
@@ -184,7 +162,7 @@ export const faqs = [
     {
         id: 'cristaliza',
         question: '¿La miel se cristaliza?',
-        answer: 'Sí, la cristalización es completamente natural y es un signo de que tu miel es auténtica y pura. No contiene aditivos que la mantengan líquida artificialmente. Si prefieres miel líquida, caliéntala suavemente en baño de agua.'
+        answer: 'Sí. La miel puede cristalizar de forma natural: parte de su glucosa forma cristales y cambia la textura. Esto no significa que se haya echado a perder, pero tampoco demuestra por sí solo su pureza. Si está bien conservada, puedes consumirla así o ablandarla con un baño de agua tibia.'
     },
     {
         id: 'envios',
