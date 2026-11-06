@@ -26,7 +26,8 @@ export const navLinks = [
     { label: 'Por qué', href: '#porque' },
     { label: 'Productos', href: '#productos' },
     { label: 'Aprende', href: '#aprende' },
-    { label: 'FAQ', href: '#faq' }
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Pagos', href: 'pagos' }
 ]
 
 export const heroStats = [
@@ -80,7 +81,7 @@ export const differences = [
 export const products = [
     {
         id: '250ml',
-        size: '235 ml',
+        size: '250 ml',
         badge: 'Para probar',
         path: '/assets/235ml.png',
         image: 'Botella 250 ml',
