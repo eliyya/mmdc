@@ -122,8 +122,7 @@ export const products = [
         path: '/assets/235ml.png',
         image: 'Frasco miel mantequilla',
         text: 'presentaci%C3%B3n%20de%20miel%20mantequilla',
-        description:
-            'Para acompañar tus desayunos de una forma muy práctica',
+        description: 'Para acompañar tus desayunos de una forma muy práctica',
         featured: false,
         gradient: 'from-[#F4E2C5] to-[#EED7AE]'
     }
@@ -162,8 +161,8 @@ export const testimonials = [
 export const faqs = [
     {
         id: 'cristaliza',
-        question: '¿La miel se cristaliza?',
-        answer: 'Sí. La miel puede cristalizar de forma natural: parte de su glucosa forma cristales y cambia la textura. Esto no significa que se haya echado a perder, pero tampoco demuestra por sí solo su pureza. Si está bien conservada, puedes consumirla así o ablandarla con un baño de agua tibia.'
+        question: '¿Por qué la miel se me hizo azúcar?',
+        answer: 'Se cristalizó. La miel puede se puede cristalizar de forma natural: parte de su glucosa forma cristales y cambia la textura. Esto no significa que se haya echado a perder, ni tampoco que se le agregó azúcar. Es parte de su proceso natural y si está bien conservada, puedes consumirla así o ablandarla con un baño de agua tibia.'
     },
     {
         id: 'envios',
